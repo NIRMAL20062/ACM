@@ -1,0 +1,8 @@
+ /* universally can be used, the Modern Variables for Theme Colors */
+ :root {
+    --background: #f5f5f5;
+    --primary: #222831;
+    --secondary: #068f97;
+    --text: #393e46;
+    --light: #eeeeee;
+  }
