@@ -7,8 +7,20 @@
     --light: #eeeeee;
   }
 
+  /* selecting whole page  */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  /* Universal Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.56;
+    display: flex;  /* inspite its look of no use of it but mere jaise developer should need to make things correction of future before it occurs badly impact on speed of coding */
+    flex-direction: column;  /* Row mat kr dene bhai or reverse toh bilkul nhi */
+    min-height: 100vh;
   }
