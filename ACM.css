@@ -24,3 +24,12 @@
     flex-direction: column;  /* Row mat kr dene bhai or reverse toh bilkul nhi */
     min-height: 100vh;
   }
+
+  /* Header */
+  .header {
+    text-align: center;
+    background: var(--primary);
+    color: var(--light);
+    padding: 2rem 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  } 
