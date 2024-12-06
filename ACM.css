@@ -45,3 +45,11 @@
   font-size: 1.2rem;
   margin-top: 0.5rem;
 }
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
