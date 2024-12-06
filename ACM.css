@@ -34,4 +34,14 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 
-  
+ /* defining a polygon shape through its vertices */
+    
+ .header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
