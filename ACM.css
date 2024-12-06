@@ -6,3 +6,9 @@
     --text: #393e46;
     --light: #eeeeee;
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
