@@ -53,3 +53,25 @@
         // Add event listener for window resize
         window.addEventListener('resize', adjustCardGrid);
       });
+
+
+      function startPledge() {
+        const pledgeContent = document.getElementById('pledgeContent');
+        const pledgeText = "I commit to making a positive impact in my community and the world. I will strive to be a responsible citizen, support those in need, and promote kindness and understanding among all.";
+        
+        pledgeContent.style.display = 'block'; // Show the paragraph
+        pledgeContent.innerHTML = ''; // Clear previous content
+      
+        let words = pledgeText.split(' ');
+        let index = 0;
+      
+        function displayNextWord() {
+          if (index < words.length) {
+            pledgeContent.innerHTML += words[index] + ' ';
+            index++;
+            setTimeout(displayNextWord, 300); // Adjust the speed of word appearance
+          }
+        }
+      
+        displayNextWord(); // Start displaying words
+      }
