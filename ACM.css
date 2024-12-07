@@ -68,7 +68,7 @@
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(116, 60, 60, 0.2);
 }
 
 /* Card  Content */
