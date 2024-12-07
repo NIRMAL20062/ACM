@@ -1,7 +1,9 @@
+/* Jai Mata Di */
+
 :root {
   --primary-color: #1A1A2E; 
   --secondary-color: #16213E;
-  --background-gradient: linear-gradient(135deg, #0F3460, #16213E); 
+  --background-gradient: linear-gradient(135deg, #0F3460, #2b3d70); 
 
   --text-color: #E94560;
   --highlight-color: #FFFFFF;
@@ -10,6 +12,19 @@
   --button-gradient: linear-gradient(45deg, #E94560, #A9E0F5);
 }
 
+
+/* progress bar start */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+
+    background-color: #E94560;
+    z-index: 1000;
+    transition: width 0.2s ease;
+}
 /* body style section  */
 body {
     margin: 0;
@@ -19,73 +34,90 @@ body {
     background: var(--background-gradient);
     color: var(--highlight-color);
 
-    line-height: 1.6;
+    line-height: 1.63;
 }
 /* body section ends */
 
 
 /* navigation section start */
 .navbar {
-    padding: 20px;
-    display: flex;
-
+    margin-top: 20px;
+    
+    padding: 22px;
     background: var(--primary-color);
     color: var(--highlight-color);
 
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
 
-  z-index: 10;
-
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .nav-links {
-
-  display: flex;
+    display: flex;
 }
 
 .nav-links li {
-  margin: 0 15px;
+    margin: 0 16px;
 }
 
 .nav-links a {
-  color: var(--highlight-color);
-  text-decoration: none;
-  transition: background 0.3s ease, color 0.3s ease;
-  padding: 5px 10px;
-  border-radius: 8px;
+    padding: 5.3px 11px;
+
+    position: relative;
+    color: #E94560;
+
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+
+    border-radius: 9px;
+    border: 2px solid transparent;
+
+    transition: border-radius 0.3s ease, border 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
-  background: var(--link-hover-gradient);
-  color: var(--highlight-color);
+    color: #FFFFFF;
+
+    border: 2px solid #E94560;
+    border-radius: 20px;
 }
 /* navigation section ends */
 
 
 /* Home section statts */
 .home-section {
-  height: 100vh;
+  height: 820px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   text-align: center;
   background: linear-gradient(135deg, #16213E, #0F3460);
   color: var(--highlight-color);
 }
 
 .home-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-size: 43px;
+  margin-bottom: 15px;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
 }
+/*  home section ends */
 
+
+
+/* event starts */
 .events-section {
+  padding: 60px 35px;
+
   background-color: var(--primary-color);
   color: white;
-  padding: 4rem 2rem;
 }
 
 .events-container {
@@ -96,14 +128,20 @@ body {
 }
 
 .event-card {
-  background: white;
-  color: var(--text-color);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
   padding: 20px;
   width: 300px;
-  transition: transform 0.3s, box-shadow 0.3s;
+
+  background: rgb(49, 40, 53);
+  /* color: var(--text-color); */
+  color: #FFFFFF;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+  
 }
 
 .event-card:hover {
@@ -118,22 +156,29 @@ body {
 .event-card p {
   margin: 0;
 }
+/* events ends */
+
+
 
 .about-section, .events-section, .highlights-section, .contact-section {
-  width: 100%;
-  max-width: 1200px;
-  padding: 4rem 2rem;
-  margin: 2rem auto;
-  background: var(--footer-gradient);
-  color: var(--highlight-color);
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 65px 30px;
+    margin: 30px auto;
+
+    width: 100%;
+    max-width: 1250px;
+
+    background: var(--footer-gradient);
+    color: var(--highlight-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .about-section h2, .events-section h2, .highlights-section h2, .contact-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: var(--text-color);
+    
+    color: var(--text-color);
+
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .gallery-container {
@@ -143,23 +188,26 @@ body {
 }
 
 .highlights-section img {
-  max-width: 300px;
-  margin: 10px;
-  border: 5px solid var(--primary-color);
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    margin: 10px;
+    border-radius: 10px;
+
+    max-width: 300px;
+    border: 5px solid var(--primary-color);
+
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .highlights-section img:hover {
-  transform: scale(1.1);
+  transform: scale(1.13);
   border-color: var(--link-hover-gradient);
   box-shadow: 0px 4px 15px rgba(233, 69, 96, 0.7);
 }
 
 .contact-section {
+  text-align: center;
   background: linear-gradient(to right, #16213E, #0F3460);
   color: var(--highlight-color);
-  text-align: center;
 }
 
 .contact-section a {
@@ -174,18 +222,22 @@ body {
 .social-links {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 18px;
 }
 
 .social-links a {
   margin: 0 10px;
+
   display: inline-block;
+
   width: 40px;
   height: 40px;
+
   border-radius: 50%;
   background: var(--button-gradient);
   text-align: center;
   line-height: 40px;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -195,9 +247,10 @@ body {
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  background: var(--footer-gradient);
-  color: var(--highlight-color);
-  border-top: 2px solid #0F3460;
+    padding: 15px;
+
+    text-align: center;
+    background: var(--footer-gradient);
+    color: var(--highlight-color);
+    border-top: 2px solid #0F3460;
 }

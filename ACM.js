@@ -1,3 +1,13 @@
+window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / documentHeight) * 100;
+    document.getElementById("progress-bar").style.width = scrollPercent + "%";
+});
+
+
+
+
 // Scroll Reveal
 window.addEventListener("scroll", () => {
     const sections = document.querySelectorAll("section");
