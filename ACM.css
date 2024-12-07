@@ -64,3 +64,9 @@
   transform: translateY(0);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+/* add some animation to the card or say card hover effect */
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
