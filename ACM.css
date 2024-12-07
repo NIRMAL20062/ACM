@@ -3,7 +3,7 @@
 :root {
   --primary-color: #1A1A2E; 
   --secondary-color: #16213E;
-  --background-gradient: linear-gradient(135deg, #0F3460, #16213E); 
+  --background-gradient: linear-gradient(135deg, #0F3460, #2b3d70); 
 
   --text-color: #E94560;
   --highlight-color: #FFFFFF;
@@ -132,8 +132,9 @@ body {
   padding: 20px;
   width: 300px;
 
-  background: white;
-  color: var(--text-color);
+  background: rgb(49, 40, 53);
+  /* color: var(--text-color); */
+  color: #FFFFFF;
   border-radius: 10px;
 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
