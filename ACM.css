@@ -98,3 +98,16 @@
   color: var(--light);
   margin-top: auto;
 }
+
+/* Add this to your existing CSS */
+    /* Anchor tag styling in the footer */
+    .footer a {
+      color: aliceblue;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover effect for anchor tag */
+    .footer a:hover {
+      color: #36d9e1; 
+      transform: scale(1.1);
+    }
