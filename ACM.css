@@ -7,7 +7,18 @@
     --light: white;
   }
 
-  /* selecting whole page  */
+  /* Progress Bar Styling */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px; /* Height of the progress bar */
+  background: var(--secondary); /* Use your theme color */
+  width: 0; /* Initial width */
+  z-index: 1000; /* Ensure it stays on top */
+  transition: width 0.2s ease; /* Smooth transition */
+}
+  /* selecting whole page 😊 */
   * {
     margin: 0;
     padding: 0;
@@ -22,7 +33,7 @@
     line-height: 1.56;
     display: flex; 
     flex-direction: column;
-    min-height: 800px;
+    min-height: 895px;
   }
 
   /* Header */
@@ -30,28 +41,28 @@
     text-align: center;
     background: var(--primary);
     color: var(--light);
-    padding: 2rem 1rem;
+    padding: 32px 16px;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 
- /* defining a polygon shape through its vertices */
+ /* define a polygon shape through its vertices */
     
  .header h1 {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
+  font-size: 19.2px;
+  margin-top: 8px;
 }
 
 /* Card Grid */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
+  gap: 32px;
+  padding: 32px;
 }
 
 /* Card Styling */
@@ -78,22 +89,22 @@
 }
 
 .card-content h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
   color: var(--secondary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 /*  */
 
 .card-content p {
   color: var(--text);
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 /* Footer */
 .footer {
   text-align: center;
-  padding: 1rem;
+  padding: 16px;
   background: var(--primary);
   color: var(--light);
   margin-top: auto;
@@ -109,5 +120,5 @@
     /* Hover effect for anchor tag */
     .footer a:hover {
       color: #36d9e1; 
-      transform: scale(1.1);
+      transform: scale(1.112);
     }
