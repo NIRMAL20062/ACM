@@ -20,8 +20,8 @@
     background: var(--background);
     color: var(--text);
     line-height: 1.56;
-    display: flex;  /* inspite its look of no use of it but mere jaise developer should need to make things correction of future before it occurs badly impact on speed of coding */
-    flex-direction: column;  /* Row mat kr dene bhai or reverse toh bilkul nhi */
+    display: flex; 
+    flex-direction: column;
     min-height: 800px;
   }
 
@@ -70,3 +70,13 @@
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* Card Content */
+.card-content {
+  padding: 1.5rem;    /* 32px=2rem */
+  text-align: center;
+}
+
+
+
+/*  */
