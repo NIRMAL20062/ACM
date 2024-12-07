@@ -1,3 +1,5 @@
+/* Jai Mata Di */
+
 :root {
   --primary-color: #1A1A2E; 
   --secondary-color: #16213E;
@@ -51,19 +53,22 @@ body {
 }
 
 .nav-links a {
+    position: relative;
     padding: 5.3px 11px;
-
-  color: var(--highlight-color);
-
-  text-decoration: none;
-
-  transition: background 0.3s ease, color 0.3s ease;
-  border-radius: 9px;
+    color: #E94560; 
+    text-decoration: none;
+    border-radius: 9px;
+    overflow: hidden;
+    z-index: 1; 
+    border: 2px solid transparent; 
+    transition: border-radius 0.3s ease, border 0.3s ease, color 0.3s ease; 
 }
 
 .nav-links a:hover {
-  background: var(--link-hover-gradient);
-  color: var(--highlight-color);
+    color: #FFFFFF;
+    border: 2px solid #E94560; 
+    border-radius: 20px; 
+    transform: scale(1.1);
 }
 /* navigation section ends */
 
@@ -84,7 +89,7 @@ body {
 .home-section h2 {
   font-size: 43px;
   margin-bottom: 15px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
 }
 /*  home section ends */
 
@@ -142,7 +147,7 @@ body {
     margin: 30px auto;
 
     width: 100%;
-    max-width: 1200px;
+    max-width: 1250px;
 
     background: var(--footer-gradient);
     color: var(--highlight-color);
