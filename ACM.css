@@ -1,37 +1,48 @@
 :root {
-  --primary-color: #1A1A2E; /* Dark Navy Blue */
-  --secondary-color: #16213E; /* Deep Midnight Blue */
-  --background-gradient: linear-gradient(135deg, #0F3460, #16213E); /* Rich Gradient */
-  --text-color: #E94560; /* Vibrant Red */
-  --highlight-color: #FFFFFF; /* Bright White */
-  --footer-gradient: linear-gradient(135deg, #2c3f71, #090923); /* Darker Gradient */
-  --link-hover-gradient: linear-gradient(90deg, #A9E0F5, #E94560); /* Blue to Red */
-  --button-gradient: linear-gradient(45deg, #E94560, #A9E0F5); /* Red to Blue */
+  --primary-color: #1A1A2E; 
+  --secondary-color: #16213E;
+  --background-gradient: linear-gradient(135deg, #0F3460, #16213E); 
+
+  --text-color: #E94560;
+  --highlight-color: #FFFFFF;
+  --footer-gradient: linear-gradient(135deg, #2c3f71, #090923);
+  --link-hover-gradient: linear-gradient(90deg, #A9E0F5, #E94560);
+  --button-gradient: linear-gradient(45deg, #E94560, #A9E0F5);
 }
 
+/* body style section  */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: var(--background-gradient);
-  color: var(--highlight-color);
-}
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 
+    background: var(--background-gradient);
+    color: var(--highlight-color);
+
+    line-height: 1.6;
+}
+/* body section ends */
+
+
+/* navigation section start */
 .navbar {
-  background: var(--primary-color);
-  color: var(--highlight-color);
-  padding: 20px;
-  display: flex;
+    padding: 20px;
+    display: flex;
+
+    background: var(--primary-color);
+    color: var(--highlight-color);
+
   justify-content: space-between;
   align-items: center;
   position: relative;
+
   z-index: 10;
+
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .nav-links {
-  list-style: none;
+
   display: flex;
 }
 
@@ -44,14 +55,17 @@ body {
   text-decoration: none;
   transition: background 0.3s ease, color 0.3s ease;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .nav-links a:hover {
   background: var(--link-hover-gradient);
   color: var(--highlight-color);
 }
+/* navigation section ends */
 
+
+/* Home section statts */
 .home-section {
   height: 100vh;
   display: flex;
