@@ -1,8 +1,8 @@
  /* universally can be used, the Modern Variables for Theme Colors */
  :root {
     --background: white;
-    --primary: #222831;
-    --secondary: #068f97;
+    --primary: #3c81e8;
+    --secondary: #0b9ece;
     --text: #393e46;
     --light: white;
   }
@@ -71,9 +71,9 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Card Content */
+/* Card  Content */
 .card-content {
-  padding: 1.5rem;    /* 32px=2rem */
+  padding: 32px;
   text-align: center;
 }
 
@@ -84,3 +84,17 @@
 }
 
 /*  */
+
+.card-content p {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: var(--light);
+  margin-top: auto;
+}
