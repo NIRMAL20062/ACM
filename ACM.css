@@ -1,5 +1,8 @@
 /* Jai Mata Di 🙏 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 :root {
   --primary-color: #1A1A2E; 
   --secondary-color: #16213E;
@@ -29,8 +32,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-
+    /* font-family: 'Helvetica Neue', Arial, sans-serif; */
+    font-family: 'Roboto', sans-serif;
     background: var(--background-gradient);
     color: var(--highlight-color);
 
