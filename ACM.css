@@ -248,7 +248,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 /* my footer got a lot of styles, so I'll just show you the most important ones */
