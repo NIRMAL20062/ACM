@@ -1,12 +1,10 @@
+// add js events for scrolling bar progress 
 window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercent = (scrollTop / documentHeight) * 100;
     document.getElementById("progress-bar").style.width = scrollPercent + "%";
 });
-
-
-
 
 // Scroll Reveal
 window.addEventListener("scroll", () => {
@@ -56,3 +54,5 @@ setInterval(() => {
         eventsSection.removeChild(eventsSection.firstElementChild);
     }
 }, 3000);
+
+
