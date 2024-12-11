@@ -41,7 +41,6 @@ body {
 }
 /* body section ends */
 
-
 /* navigation section start */
 .navbar {
     margin-top: 20px;
@@ -92,7 +91,6 @@ body {
 }
 /* navigation section ends */
 
-
 /* Home section statts */
 .home-section {
   height: 820px;
@@ -112,8 +110,6 @@ body {
   text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
 }
 /*  home section ends */
-
-
 
 /* event starts */
 .events-section {
@@ -159,8 +155,6 @@ body {
 .event-card p {
   margin: 0;
 }
-
-
 /* events ends */
 
 
@@ -257,7 +251,6 @@ body {
   border-radius: 50%;
 }
 
-
 /* my footer got a lot of styles, so I'll just show you the most important ones */
 footer {
     padding: 15px;
@@ -267,3 +260,6 @@ footer {
     color: var(--highlight-color);
     border-top: 2px solid #0F3460;
 }
+
+
+/* 🙏 */
